@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- box icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- nav section style -->
+    <nav>
+        <div class="logo">
+            <a href="#">Blog</a>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#latest">Lastest</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="">Sign up</a></li>
+            <li><a href="">Sign in</a></li>
+        </ul>
+
+        <div class="hamburger-menu" onclick="toggleHam(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+
+    <section class="hero">
+        <h1>Discover Nice Blog Here</h1>
+
+        <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rutru
+            at elit vel luctus. Cras vestibulumi,
+        </div>
+
+
+        <div class="search-box" id="search-box">
+            <input type="text" placeholder="Search blog here.." name="q">
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </div>
+
+    </section>
+
+    <section class="top-blog">
+        <h2>Top blog</h2>
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <div class="blog-box">
+
+                    <img src="img/janie-kpop.jpg" id="img-blog" class="img-topblog"alt="">
+                   
+                    <div class="description">
+                        <h3>Tailored Jeans</h3>
+                        <p class="date"><i class='bx bx-time'></i> 10/10/2011</p>
+                       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                        Lorem jeamsun denim lorem jeansum.</p>
+                        <p><button>Read more</button></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="blog-box">
+
+                    <img src="img/twice.jpg" id="img-blog" class="img-topblog"alt="">
+                   
+                    <div class="description">
+                        <h3>Tailored Jeans</h3>
+                        <p class="date"><i class='bx bx-time'></i> 10/10/2011</p>
+                       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                        Lorem jeamsun denim lorem jeansum.</p>
+                        <p><button>Read more</button></p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="mySlides">
+                <div class="blog-box">
+
+                    <img src="img/janie-top.jpg" id="img-blog" class="img-topblog"alt="">
+                   
+                    <div class="description">
+                        <h3>Tailored Jeans</h3>
+                        <p class="date"><i class='bx bx-time'></i> 10/10/2011</p>
+                       <p>Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                        Lorem jeamsun denim lorem jeansum.</p>
+                        <p><button>Read more</button></p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            
+            <div class="dot-container">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+    </section>
+
+    <section class="category">
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> All</button>
+            <button class="btn" onclick="filterSelection('anime')">Anime</button>
+            <button class="btn" onclick="filterSelection('art')"> Art</button>
+            <button class="btn" onclick="filterSelection('kpop')">K-pop</button>
+        </div>
+
+        <div class="blog">
+            <div class="filter k-pop">
+                <div class="card">
+                    <img src="img/jisoo-kpop.jpg" alt="Denim Jeans" style="width:100%">
+                    <h3>Tailored Jeans</h3>
+                    <p class="date"><i class='bx bx-time'></i> 10/10/2011</p>
+                    <p class="description">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                        Lorem jeamsun denim lorem jeansum.</p>
+                    <p><button>Read more</button></p>
+                </div>
+            </div>
+            <div class="filter kpop">
+                <div class="card">
+                    <img src="img/Lisa.jpg" alt="Denim Jeans" style="width:100%">
+                    <h3>Tailored Jeans</h3>
+                    <p class="date"><i class='bx bx-time'></i> 10/10/2011</p>
+                    <p class="description">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                        Lorem jeamsun denim lorem jeansum.</p>
+                    <p><button>Read more</button></p>
+                </div>
+            </div>
+            <div class="filter kpop">
+                <div class="card">
+                    <img src="img/aespa-anime.jpg" alt="Denim Jeans" style="width:100%">
+                    <h3>Tailored Jeans</h3>
+                    <p class="date"><i class='bx bx-time'></i> 10/10/2011</p>
+                    <p class="description">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                        Lorem jeamsun denim lorem jeansum.</p>
+                    <p><button>Read more</button></p>
+                </div>
+            </div>
+
+            <div class="filter anime">
+                <div class="card">
+                    <img src="img/rose.jpg" alt="Denim Jeans" style="width:100%">
+                    <h3>Tailored Jeans</h3>
+                    <p class="date"><i class='bx bx-time'></i> 10/10/2011</p>
+                    <p class="description">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                        Lorem jeamsun denim lorem jeansum.</p>
+                    <p><button>Read more</button></p>
+                </div>
+            </div>
+
+            <div class="filter anime">
+                <div class="card">
+                    <img src="img/rose.jpg" alt="Denim Jeans" style="width:100%">
+                    <h3>Tailored Jeans</h3>
+                    <p class="date"><i class='bx bx-time'></i> 10/10/2011</p>
+                    <p class="description">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                        Lorem jeamsun denim lorem jeansum.</p>
+                    <p><button>Read more</button></p>
+                </div>
+            </div>
+
+            <div class="filter art">
+                <div class="card">
+                    <img src="img/rose.jpg" alt="Denim Jeans" style="width:100%">
+                    <h3>Tailored Jeans</h3>
+                    <p class="date"><i class='bx bx-time'></i> 10/10/2011</p>
+                    <p class="description">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                        Lorem jeamsun denim lorem jeansum.</p>
+                    <p><button>Read more</button></p>
+                </div>
+            </div>
+
+            <div class="filter art">
+                <div class="card">
+                    <img src="img/rose.jpg" alt="Denim Jeans" style="width:100%">
+                    <h3>Tailored Jeans</h3>
+                    <p class="date"><i class='bx bx-time'></i> 10/10/2011</p>
+                    <p class="description">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum.
+                        Lorem jeamsun denim lorem jeansum.</p>
+                    <p><button>Read more</button></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
