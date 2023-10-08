@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write Blog</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+     <!-- box icon -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#">Blog</a>
+        </div>
+        <ul class="menu" id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="write.html">Write</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Sign up</a></li>
+            <li><a href="">Log out</a></li>
+        </ul>
+
+        <div class="hamburger-menu" onclick="toggleHam(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </nav>
+
+
+    <section class="picture-blog">
+        <h1> Write new blog</h1>
+    
+    
+        <form action="">
+
+            <label for="topic">Title</label>
+            <input type="text" id="topic" name="firstname" placeholder="Your title..">
+
+            <label for="category">Category</label>
+            <select id="category" name="country">
+                <option value="k-pop">K-pop</option>
+                <option value="anime">Anime</option>
+                <option value="Aart">Art</option>
+            </select>
+            
+            <label for="desciption">Desciption</label>
+            <textarea id="desciption" name="desciption" placeholder="Write something.." style="height:200px"></textarea>
+
+            <label for="img">Select image:</label>
+            <input type="file" id="img" name="img" accept="image/*">
+
+            <br>
+    
+            <input type="submit" value="Submit">
+    
+        </form>
+    </section>
+    </body>
+</html>

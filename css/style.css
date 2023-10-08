@@ -333,8 +333,63 @@ q {font-style: italic;}
   text-align: center;
   row-gap: 15px;
   border: 1px solid black;
-  border-radius: 0 2rem 2rem 0  ;
+  border-radius: 0 2rem 2rem 0;
 }
+
+
+.picture-blog {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+ .picture-blog input[type=text], .picture-blog select, .picture-blog form textarea  {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  border-radius: .8rem;
+  margin: .7rem 0;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.picture-blog form textarea {
+  resize: none;
+
+}
+
+
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+   
+    border-radius: 32px;
+    font-size: 18px;
+    margin: 20px 0;
+    float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
 
 
 
